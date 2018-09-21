@@ -13,7 +13,7 @@ Prova da empresa Agence desenvolvida em PHP utilizando framework Laravel.
 ## Requirements
 
 - Apache
-- PHP >= 5.5.9
+- PHP >= 7
 - MySql >=5
 - Composer
 
