@@ -24,14 +24,14 @@ Route::get('oauth/{driver}/callback', 'Auth\SocialAuthController@handleProviderC
 
 // Routes after Auth
 Route::middleware(['auth'])->group(function () {
-	Route::get('home', 'homeController@index')->name('home');
-	Route::get('comercial', 'homeController@comercial')->name('comercial');
+	Route::get('home', 'HomeController@index')->name('home');
+	Route::get('comercial', 'HomeController@comercial')->name('comercial');
 
-	Route::post('usuario/relatorio', 'usuarioController@relatorio')->name('usuario.relatorio');
-	Route::post('usuario/grafico_barra', 'usuarioController@grafico_barra')->name('usuario.grafico_barra');
-	Route::post('usuario/grafico_pizza', 'usuarioController@grafico_pizza')->name('usuario.grafico_pizza');
+	Route::post('usuario/relatorio', 'UsuarioController@relatorio')->name('usuario.relatorio');
+	Route::post('usuario/grafico_barra', 'UsuarioController@grafico_barra')->name('usuario.grafico_barra');
+	Route::post('usuario/grafico_pizza', 'UsuarioController@grafico_pizza')->name('usuario.grafico_pizza');
 
-	Route::post('cliente/relatorio', 'clienteController@relatorio')->name('cliente.relatorio');
-	Route::post('cliente/grafico_linha', 'clienteController@grafico_linha')->name('cliente.grafico_linha');
-	Route::post('cliente/grafico_pizza', 'clienteController@grafico_pizza')->name('cliente.grafico_pizza');
+	Route::post('cliente/relatorio', 'ClienteController@relatorio')->name('cliente.relatorio');
+	Route::post('cliente/grafico_linha', 'ClienteController@grafico_linha')->name('cliente.grafico_linha');
+	Route::post('cliente/grafico_pizza', 'ClienteController@grafico_pizza')->name('cliente.grafico_pizza');
 });
