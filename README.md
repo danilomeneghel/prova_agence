@@ -2,7 +2,7 @@
 
 Prova da empresa Agence desenvolvida em PHP utilizando framework Laravel.
 
-## Features
+## Características
 
 - OAuth
 - Login
@@ -10,14 +10,14 @@ Prova da empresa Agence desenvolvida em PHP utilizando framework Laravel.
 - Filter
 - View Blade
 
-## Requirements
+## Requisitos
 
 - Apache
 - PHP >= 7
 - MySql >=5
 - Composer
 
-## Tecnologies
+## Tecnologias
 
 - PHP
 - JS
@@ -28,7 +28,7 @@ Prova da empresa Agence desenvolvida em PHP utilizando framework Laravel.
 - Composer
 - Artisan
 
-## Installation
+## Instalação
 
 ```
 $ git clone https://github.com/danilomeneghel/prova_agence.git
@@ -69,9 +69,20 @@ $ php artisan serve
 
 Finalmente abra http://localhost:8000/ em seu navegador.
 
-## Conexão 
+## Login 
 
 Para poder se logar no sistema é só criar um novo usuário clicando no link "Criar uma conta".
+
+Ou pode logar usuando o usuário Admin já cadastrado: <br>
+
+	- Usuário: admin@admin.com
+	- Senha: 1234
+
+## Demonstração
+
+Para ver o sistema rodando online é só acessar o link abaixo: <br>
+
+http://provaagence.herokuapp.com
 
 ## License
 
