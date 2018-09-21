@@ -33,18 +33,22 @@ Prova da empresa Agence desenvolvida em PHP utilizando framework Laravel.
 ```
 $ git clone https://github.com/danilomeneghel/prova_agence.git
 
-$ cd angularjs_laravel
+$ cd prova_agence
 
 $ composer install
 ```
 
-Crie um banco de dados com o nome "caol" em seu MySql.
-Depois rode o seguinte comando:
+Crie um banco de dados com o nome "caol" no seu Mysql. <br>
+Você encontra o dump na raiz do projeto (caol.sql) e pode efetuar importação da seguinte forma:
 
 ```
 $ mysql -u <your user> -p <your password>
 
 mysql> create database `caol`;
+
+mysql> use `caol`;
+
+mysql> source caol.sql
 ```
 
 Volte o terminal, verifique o arquivo .env e efetue a configuração correta para conexão do seu banco de dados e depois rode o Artisan:
@@ -64,6 +68,10 @@ $ php artisan serve
 ```
 
 Finalmente abra http://localhost:8000/ em seu navegador.
+
+## Conexão 
+
+Para poder se logar no sistema é só criar um novo usuário clicando no link "Criar uma conta".
 
 ## License
 
