@@ -187,7 +187,8 @@ a {
 }
 
 .home {
-	padding: 70px 0px;
+	padding-top: 70px;
+	padding-bottom: 270px;
 	text-align: center;
 }
 
