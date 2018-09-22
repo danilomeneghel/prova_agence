@@ -329,15 +329,14 @@ form {
 			padding-right: 8px !important;
 		}
 		.panel-default {
-			padding-top: 12px !important;
-			padding-left: 12px !important;
+			padding: 15px 12px !important;
 		}
 		.container-menu {
-			padding: 27px 15px !important;
+			padding: 27px 12px !important;
 			height: 80px !important;
 		}
 		.icon-top {
-			width: 52px;
+			width: 50px;
 			height: 42px;
 			padding: 4px 0px;
 			font-size: 10px;
