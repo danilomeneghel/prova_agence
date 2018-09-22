@@ -6,7 +6,6 @@ var receitas = $('input:checked[id=desemp_cliente]').map(function() {
      return new Array(this.value);
 }).get();
 
-var color = Chart.helpers.color;
 new Chart(document.getElementById("grafico_linha"), {
     type: 'line',
     data: {

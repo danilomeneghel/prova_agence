@@ -186,6 +186,10 @@ a {
   background-color: #337ab7 !important;
 }
 
+.table {
+	background-color: #fff !important;
+}
+
 .home {
 	padding-top: 70px;
 	padding-bottom: 270px;
