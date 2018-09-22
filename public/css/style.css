@@ -248,10 +248,16 @@ a {
 	margin-top: -18px !important;
 }
 
+form {
+	margin-top: 20px !important;
+}
+
+.form-group label {
+	min-width: 68px !important;
+}
+
 #periodo_consultor, #periodo_cliente {
 	display: inline-table !important;
-	margin-top: 22px;
-	margin-left: 13px;
 	width: 340px !important;
 	vertical-align: bottom;
 }
@@ -318,9 +324,13 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
+		.container, .container-fluid {
+			padding-left: 8px !important;
+			padding-right: 8px !important;
+		}
 		.panel-default {
-			padding-top: 15px !important;
-			padding-left: 15px !important;
+			padding-top: 12px !important;
+			padding-left: 12px !important;
 		}
 		.container-menu {
 			padding: 27px 15px !important;
@@ -342,13 +352,15 @@ a {
 			width: 305px !important;
 		}
 		.multiselect-container {
-			width: 306px !important;
-		}
-		.btn-info {
-			font-size: 13px !important;
-			padding: 6px 8px !important;
+			width: 307px !important;
 		}
 		.btn-group {
 			width: 307px !important;
+		}
+		.btn-info {
+			font-size: 15px !important;
+			padding: 6px 8px !important;
+			margin: 5px 0px !important;
+			min-width: 307px !important;
 		}
 }
