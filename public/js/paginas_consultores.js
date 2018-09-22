@@ -6,9 +6,13 @@ function consultorRelatorio() {
       data: form_data,
       datatype: "html",
       cache: false,
-      success:function(data) {
+      beforeSend: function() {
+        $('#consultor_relatorio').append('<div class="alert alert-warning">Carregando...</div>');
         $('#container-gb-consultor').remove();
         $('#container-gp-consultor').remove();
+      },
+      success:function(data) {
+        $('#consultor_relatorio .alert-warning').remove();
         $('#consultor_relatorio').html(data);
       }
     });
@@ -23,9 +27,13 @@ function consultorGraficoBarra() {
       datatype: "html",
       cache: false,
       async: true,
-      success:function(data) {
+      beforeSend: function() {
+        $('#consultor_grafico_barra').append('<div class="alert alert-warning">Carregando...</div>');
         $('#container-r-consultor').remove();
         $('#container-gp-consultor').remove();
+      },
+      success:function(data) {
+        $('#consultor_grafico_barra .alert-warning').remove();
         $('#consultor_grafico_barra').html(data);
       }
     });
@@ -40,9 +48,13 @@ function consultorGraficoPizza() {
       datatype: "html",
       cache: false,
       async: true,
-      success:function(data) {
+      beforeSend: function() {
+        $('#consultor_grafico_pizza').append('<div class="alert alert-warning">Carregando...</div>');
         $('#container-r-consultor').remove();
         $('#container-gb-consultor').remove();
+      },
+      success:function(data) {
+        $('#consultor_grafico_pizza .alert-warning').remove();
         $('#consultor_grafico_pizza').html(data);
       }
     });

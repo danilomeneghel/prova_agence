@@ -6,9 +6,13 @@ function clienteRelatorio() {
       data: form_data,
       datatype: "html",
       cache: false,
-      success:function(data) {
+      beforeSend: function() {
+        $('#cliente_relatorio').append('<div class="alert alert-warning">Carregando...</div>');
         $('#container-gl-cliente').remove();
         $('#container-gp-cliente').remove();
+      },
+      success:function(data) {
+        $('#cliente_relatorio .alert-warning').remove();
         $('#cliente_relatorio').html(data);
       }
     });
@@ -23,9 +27,13 @@ function clienteGraficoLinha() {
       datatype: "html",
       cache: false,
       async: true,
-      success:function(data) {
+      beforeSend: function() {
+        $('#cliente_grafico_linha').append('<div class="alert alert-warning">Carregando...</div>');
         $('#container-r-cliente').remove();
         $('#container-gp-cliente').remove();
+      },
+      success:function(data) {
+        $('#cliente_grafico_linha .alert-warning').remove();
         $('#cliente_grafico_linha').html(data);
       }
     });
@@ -40,9 +48,13 @@ function clienteGraficoPizza() {
       datatype: "html",
       cache: false,
       async: true,
-      success:function(data) {
+      beforeSend: function() {
+        $('#cliente_grafico_pizza').append('<div class="alert alert-warning">Carregando...</div>');
         $('#container-r-cliente').remove();
         $('#container-gl-cliente').remove();
+      },
+      success:function(data) {
+        $('#cliente_grafico_pizza .alert-warning').remove();
         $('#cliente_grafico_pizza').html(data);
       }
     });
