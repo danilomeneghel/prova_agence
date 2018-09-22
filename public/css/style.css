@@ -341,6 +341,9 @@ form {
 			padding: 4px 0px;
 			font-size: 10px;
 		}
+		.menu {
+			width: 100% !important;
+		}
 		.menu-logo {
 			display: none !important;
 		}
