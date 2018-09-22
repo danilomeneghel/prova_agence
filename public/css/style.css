@@ -370,4 +370,37 @@ form {
 			margin: 5px 0px !important;
 			min-width: 307px !important;
 		}
+		#container-gb-consultor .col-md-9, #container-gb-consultor .chartjs-size-monitor,
+		#container-gb-cliente .col-md-9, #container-gb-cliente .chartjs-size-monitor {
+		  width: 480px !important;
+			height: 480px !important;
+			margin-left: -95px !important;
+		}
+		#container-gb-consultor #grafico_pizza_consultor,
+		#container-gb-cliente #grafico_pizza_cliente {
+			min-width: 480px !important;
+			min-height: 230px !important;
+		}
+		#container-gl-consultor .col-md-9, #container-gl-consultor .chartjs-size-monitor,
+		#container-gl-cliente .col-md-9, #container-gl-cliente .chartjs-size-monitor {
+		  width: 480px !important;
+			height: 480px !important;
+			margin-left: -95px !important;
+		}
+		#container-gl-consultor #grafico_pizza_consultor,
+		#container-gl-cliente #grafico_pizza_cliente {
+			min-width: 480px !important;
+			min-height: 230px !important;
+		}
+		#container-gp-consultor .col-md-9, #container-gp-consultor .chartjs-size-monitor,
+		#container-gp-cliente .col-md-9, #container-gp-cliente .chartjs-size-monitor {
+		  width: 480px !important;
+			height: 480px !important;
+			margin-left: -70px !important;
+		}
+		#container-gp-consultor #grafico_pizza_consultor,
+		#container-gp-cliente #grafico_pizza_cliente {
+			min-width: 480px !important;
+			min-height: 230px !important;
+		}
 }

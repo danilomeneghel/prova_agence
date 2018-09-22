@@ -5,15 +5,15 @@ var dynamicColors = function() {
   return "rgb(" + r + "," + g + "," + b + ")";
 }
 
-var nomes = $('input:checked[id=desemp_porcentual]').map(function() {
+var nomes = $('input:checked[id=desemp_porcentual_cliente]').map(function() {
      return new Array(this.name);
 }).get();
 
-var receitas = $('input:checked[id=desemp_porcentual]').map(function() {
+var receitas = $('input:checked[id=desemp_porcentual_cliente]').map(function() {
      return new Array(this.value);
 }).get();
 
-var cores = $('input:checked[id=desemp_porcentual]').map(function() {
+var cores = $('input:checked[id=desemp_porcentual_cliente]').map(function() {
      return dynamicColors();
 }).get();
 
@@ -29,9 +29,12 @@ new Chart(document.getElementById("grafico_pizza_cliente"), {
       }]
     },
     options: {
+      legend: {
+        display: false
+      },
       title: {
         display: true,
-        text: 'Desempenho dos Consultores (%)'
+        text: 'Desempenho dos Clientes (%)'
       },
       legend: { display: true }
     }

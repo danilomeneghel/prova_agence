@@ -4,7 +4,7 @@
 			<div class="alert alert-info">Nenhum dado encontrado.</div>
 		@else
 			@foreach($desemp_porcentual as $key => $value)
-				<input type="checkbox" id="desemp_porcentual" name="{{ $key }}" value="{{ $value }}" checked="checked" style="display: none">
+				<input type="checkbox" id="desemp_porcentual_consultor" name="{{ $key }}" value="{{ $value }}" checked="checked" style="display: none">
 			@endforeach
 			<canvas id="grafico_pizza_consultor"></canvas>
 		@endif
