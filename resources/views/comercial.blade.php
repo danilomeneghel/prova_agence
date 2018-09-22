@@ -4,7 +4,7 @@
 
 <div class="panel panel-default">
 			<div class="row">
-					<h3>Performance Comercial</h3>
+					<h4>Performance Comercial</h4>
 			</div>
 
 			<div class="row">

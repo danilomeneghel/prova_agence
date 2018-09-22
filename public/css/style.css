@@ -2,9 +2,9 @@
 	margin-top: 50px;
 }
 
-h1, h2, h3 {
-	margin-top: 12px !important;
-	padding-bottom: 4px !important;
+h1, h2, h3, h4 {
+	margin-top: 6px !important;
+	padding-bottom: 6px !important;
 }
 
 a {
@@ -34,6 +34,7 @@ a {
 }
 .form-group {
 	min-height: 30px !important;
+	margin-bottom: 10px !important;
 }
 .navbar-default {
 		background-color: #337AB7 !important;
@@ -41,12 +42,32 @@ a {
 .navbar-default .navbar-brand {
 		color: #fff !important;
 }
+.navbar-nav {
+		margin: 0px -15px !important;
+}
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-text {
 		color: #fff !important;
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-		color: #555 !important;
+		color: #fff !important;
 }
+.navbar-static-top {
+		z-index: 9 !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+		background-color: #528ebf !important;
+		color: #ffffff !important;
+}
+
+.navbar-nav .open .dropdown-menu {
+		background-color: #528ebf !important;
+		color: #ffffff !important;
+}
+.navbar-nav .dropdown-menu > li > a, .navbar-nav .dropdown-menu > li > a:hover {
+		background-color: #528ebf !important;
+		color: #ffffff !important;
+}
+
 .btn {
     border-radius: 3px;
     box-shadow: none;
@@ -78,10 +99,6 @@ a {
 
 .navbar-toggle {
 		background-color: #DDDDDD !important;
-}
-
-.navbar-nav .open .dropdown-menu {
-		background-color: #EEEEEE !important;
 }
 
 .container-header {
@@ -180,15 +197,25 @@ a {
 
 .container-menu {
 	background-color: #FFFFFF !important;
-	padding: 15px 30px;
+	padding: 27px 30px;
 	margin-top: -18px !important;
-	margin-bottom: -10px;
+	height: 86px;
+}
+.container-menu a {
+	color: #555 !important;
 }
 
 .menu {
-	margin-bottom: 56px;
-	width: 100%;
-	height: 42px;
+	float: left;
+	width: 89%;
+	text-align: left;
+	margin-bottom: 8px;
+}
+
+.menu-logo {
+	float: left;
+	width: 10%;
+	text-align: right;
 }
 
 .icon-top {
@@ -219,31 +246,6 @@ a {
 .panel-default {
 	padding: 15px 30px;
 	margin-top: -18px !important;
-}
-
-.div-logo {
-	display: block;
-	height: 50px;
-	clear: both;
-}
-
-.logo-left {
-	float: left;
-	width: 89%;
-	height: 22px;
-	text-align: right;
-	border-bottom: 2px solid #e1e1e1;
-	margin-bottom: 8px;
-	text-align: right;
-}
-
-.logo-right {
-	float: left;
-	width: 10%;
-	height: 42px;
-	padding: 5px 10px;
-	margin-bottom: 8px;
-	text-align: right;
 }
 
 #periodo_consultor, #periodo_cliente {
@@ -308,4 +310,45 @@ a {
 }
 ::-webkit-scrollbar-thumb {
     background: #dad7d7;
+}
+
+.form-group .dropdown-menu > li > a, .form-group .dropdown-menu > li > a:hover {
+		color: #333 !important;
+		background-color: #fff !important;
+}
+
+@media only screen and (max-width: 500px) {
+		.panel-default {
+			padding-top: 15px !important;
+			padding-left: 15px !important;
+		}
+		.container-menu {
+			padding: 27px 15px !important;
+			height: 80px !important;
+		}
+		.icon-top {
+			width: 52px;
+			height: 42px;
+			padding: 4px 0px;
+			font-size: 10px;
+		}
+		.menu-logo {
+			display: none !important;
+		}
+		#periodo_consultor, #periodo_cliente {
+			width: 307px !important;
+		}
+		.multiselect {
+			width: 305px !important;
+		}
+		.multiselect-container {
+			width: 306px !important;
+		}
+		.btn-info {
+			font-size: 13px !important;
+			padding: 6px 8px !important;
+		}
+		.btn-group {
+			width: 307px !important;
+		}
 }

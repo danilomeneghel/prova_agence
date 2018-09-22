@@ -51,15 +51,7 @@ mysql> use `caol`;
 mysql> source caol.sql
 ```
 
-Volte o terminal, verifique o arquivo .env e efetue a configuração correta para conexão do seu banco de dados e depois rode o Artisan:
-
-```
-$ php artisan key:generate
-
-$ php artisan migrate
-
-$ php artisan db:seed
-```
+Volte o terminal, verifique o arquivo .env e efetue a configuração correta para conexão do seu banco de dados.<br>
 
 Depois de realizado isso, rode o projeto:
 
@@ -67,7 +59,9 @@ Depois de realizado isso, rode o projeto:
 $ php artisan serve
 ```
 
-Finalmente abra http://localhost:8000/ em seu navegador.
+Abra em seu navegador: <br> 
+
+http://localhost:8000/
 
 ## Login 
 
@@ -80,7 +74,7 @@ Ou pode logar usuando o usuário Admin já cadastrado: <br>
 
 ## Demonstração
 
-Para ver o sistema rodando online é só acessar o link abaixo: <br>
+Para ver o sistema rodando online basta acessar o link abaixo: <br>
 
 http://provaagence.herokuapp.com
 

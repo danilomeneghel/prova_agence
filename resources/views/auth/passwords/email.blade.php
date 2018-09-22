@@ -47,7 +47,7 @@
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
                                     <button type="submit" class="btn btn-primary">
-                                        Send Password Reset Link
+                                        Password Reset Link
                                     </button>
                                     <a class="btn btn-default" href="{{ url('/') }}"><i class="fa fa-chevron-left"></i> Back</a>
                                 </div>

@@ -82,16 +82,6 @@
             </div>
         </nav>
 
-        <div class="logo-div">
-    			<div class="logo-left">
-    			</div>
-    			<div class="logo-right">
-    				<a href="http://www.agence.com.br/" target=_blank>
-    					<img alt="" src="images/logo.gif" border=0>
-    				</a>
-    			</div>
-    		</div>
-
         <div class="container-menu">
         		<div class="menu">
         			<div class="icon-top">
@@ -123,6 +113,11 @@
         				Sair</a>
         			</div> -->
         		</div>
+            <div class="menu-logo">
+              <a href="http://www.agence.com.br/" target=_blank>
+                <img alt="" src="images/logo.gif" border=0>
+              </a>
+            </div>
         </div>
 
         @yield('content')
