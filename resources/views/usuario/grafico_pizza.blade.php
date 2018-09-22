@@ -6,7 +6,7 @@
 			@foreach($desemp_porcentual as $key => $value)
 				<input type="checkbox" id="desemp_porcentual" name="{{ $key }}" value="{{ $value }}" checked="checked" style="display: none">
 			@endforeach
-			<canvas id="grafico_pizza"></canvas>
+			<canvas id="grafico_pizza_consultor"></canvas>
 		@endif
 	</div>
 
@@ -15,5 +15,5 @@
 
 	<!-- Chart -->
 	<script type="text/javascript" src="{{ asset('js/chartjs.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('js/grafico_pizza.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/grafico_pizza_consultor.js') }}"></script>
 </div>

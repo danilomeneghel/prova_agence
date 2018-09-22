@@ -7,7 +7,7 @@ var receitas = $('input:checked[id=desemp_porcentual]').map(function() {
 }).get();
 
 var color = Chart.helpers.color;
-new Chart(document.getElementById("grafico_pizza"), {
+new Chart(document.getElementById("grafico_pizza_consultor"), {
     type: 'pie',
     data: {
       labels: nomes,

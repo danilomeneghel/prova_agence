@@ -7,12 +7,12 @@ function consultorRelatorio() {
       datatype: "html",
       cache: false,
       beforeSend: function() {
+        $('#consultor_relatorio .alert-warning, #consultor_relatorio .alert-info').remove();
         $('#consultor_relatorio').append('<div class="alert alert-warning">Carregando...</div>');
         $('#container-gb-consultor').remove();
         $('#container-gp-consultor').remove();
       },
       success:function(data) {
-        $('#consultor_relatorio .alert-warning').remove();
         $('#consultor_relatorio').html(data);
       }
     });
@@ -28,12 +28,12 @@ function consultorGraficoBarra() {
       cache: false,
       async: true,
       beforeSend: function() {
+        $('#consultor_grafico_barra .alert-warning, #consultor_grafico_barra .alert-info').remove();
         $('#consultor_grafico_barra').append('<div class="alert alert-warning">Carregando...</div>');
         $('#container-r-consultor').remove();
         $('#container-gp-consultor').remove();
       },
       success:function(data) {
-        $('#consultor_grafico_barra .alert-warning').remove();
         $('#consultor_grafico_barra').html(data);
       }
     });
@@ -49,12 +49,12 @@ function consultorGraficoPizza() {
       cache: false,
       async: true,
       beforeSend: function() {
+        $('#consultor_grafico_pizza .alert-warning, #consultor_grafico_pizza .alert-info').remove();
         $('#consultor_grafico_pizza').append('<div class="alert alert-warning">Carregando...</div>');
         $('#container-r-consultor').remove();
         $('#container-gb-consultor').remove();
       },
       success:function(data) {
-        $('#consultor_grafico_pizza .alert-warning').remove();
         $('#consultor_grafico_pizza').html(data);
       }
     });
