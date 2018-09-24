@@ -22,7 +22,7 @@ new Chart(document.getElementById("grafico_pizza_cliente"), {
     data: {
       labels: nomes,
       datasets: [{
-        label: "Receita Total %",
+        label: 'Receita Total %',
         backgroundColor: cores,
         data: receitas,
         fill: true
@@ -30,12 +30,12 @@ new Chart(document.getElementById("grafico_pizza_cliente"), {
     },
     options: {
       legend: {
-        display: false
+        display: true,
+        position: 'bottom'
       },
       title: {
         display: true,
         text: 'Desempenho dos Clientes (%)'
-      },
-      legend: { display: true }
+      }
     }
 });

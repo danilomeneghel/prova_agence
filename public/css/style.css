@@ -374,22 +374,15 @@ form {
 			min-width: 307px !important;
 		}
 		#container-gb-consultor .col-md-9, #container-gb-consultor .chartjs-size-monitor,
-		#container-gb-cliente .col-md-9, #container-gb-cliente .chartjs-size-monitor {
-		  width: 480px !important;
-			height: 480px !important;
-			margin-left: -95px !important;
-		}
-		#container-gb-consultor #grafico_pizza_consultor,
-		#container-gb-cliente #grafico_pizza_cliente {
-			min-width: 480px !important;
-			min-height: 230px !important;
-		}
+		#container-gb-cliente .col-md-9, #container-gb-cliente .chartjs-size-monitor,
 		#container-gl-consultor .col-md-9, #container-gl-consultor .chartjs-size-monitor,
 		#container-gl-cliente .col-md-9, #container-gl-cliente .chartjs-size-monitor {
 		  width: 480px !important;
 			height: 480px !important;
 			margin-left: -95px !important;
 		}
+		#container-gb-consultor #grafico_pizza_consultor,
+		#container-gb-cliente #grafico_pizza_cliente,
 		#container-gl-consultor #grafico_pizza_consultor,
 		#container-gl-cliente #grafico_pizza_cliente {
 			min-width: 480px !important;
@@ -397,13 +390,13 @@ form {
 		}
 		#container-gp-consultor .col-md-9, #container-gp-consultor .chartjs-size-monitor,
 		#container-gp-cliente .col-md-9, #container-gp-cliente .chartjs-size-monitor {
-		  width: 480px !important;
-			height: 480px !important;
-			margin-left: -70px !important;
+		  width: 560px !important;
+			height: 560px !important;
+			margin-left: -100px !important;
 		}
 		#container-gp-consultor #grafico_pizza_consultor,
 		#container-gp-cliente #grafico_pizza_cliente {
-			min-width: 480px !important;
-			min-height: 230px !important;
+			min-width: 560px !important;
+			min-height: 300px !important;
 		}
 }
