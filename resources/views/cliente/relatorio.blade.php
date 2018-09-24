@@ -18,7 +18,7 @@
 						    <tr>
 							    @foreach($value as $v)
 										@if((string)$key != 'total')
-						        <td>{{ $v }}</td>
+						        <td>{!! $v !!}</td>
 										@endif
 							    @endforeach
 						    </tr>

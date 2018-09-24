@@ -333,6 +333,9 @@ form {
 			padding-left: 8px !important;
 			padding-right: 8px !important;
 		}
+		.container-header {
+	    margin: 0px 6px !important;
+		}
 		.panel-default {
 			padding: 15px 12px !important;
 		}

@@ -34,8 +34,10 @@ class ClienteController extends Controller {
 
             if (!empty($result)) {
                 foreach ($result as $key => $value) {
-                    if ($codigo_cliente_anterior == "")
+                    if ($codigo_cliente_anterior == "") {
                         $codigo_cliente_anterior = $value->NO_FANTASIA;
+                        $receita_liquida_maior = $value->RECEITA_LIQUIDA;
+                    }
 
                     if($value->NO_FANTASIA == $codigo_cliente_anterior and $value->DATA_EMISSAO == $data_anterior) {
                         $receita_liquida_total = $value->RECEITA_LIQUIDA + $receita_liquida_anterior;
@@ -70,6 +72,17 @@ class ClienteController extends Controller {
                     $data_anterior = $value->DATA_EMISSAO;
                     $receita_liquida_anterior = $receita_liquida_total;
                     $cont++;
+                }
+
+                $receitas_maximas = max($relatorio);
+
+                foreach($relatorio as $keys => $values) {
+                    foreach($values as $key => $value) {
+                        if((String)$key != "total") {
+                            if($value["Receita Líquida"] == $receitas_maximas[$key]["Receita Líquida"])
+                                $relatorio[$keys][$key]["Receita Líquida"] = "<span style='color:blue'>".$value["Receita Líquida"]."</span>";
+                        }
+                    }
                 }
             }
         }
