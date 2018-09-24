@@ -22,6 +22,8 @@ class ClienteController extends Controller {
         $receita_liquida_total = 0;
         $total_receita = 0;
         $relatorio = [];
+        $arr_ordena = [];
+        $receitas = [];
 
         if (!empty($cliente)) {
             foreach($cliente as $row) {
@@ -49,8 +51,10 @@ class ClienteController extends Controller {
                         if(!empty($receita_liquida_anterior)) {
                             $relatorio[$codigo_cliente_anterior][] = array(
                                             "Período" => $data_anterior,
-                                            "Receita Líquida" => "R$ ".number_format($receita_liquida_anterior, 2)
+                                            "Receita Líquida" => (float) $receita_liquida_anterior
                                           );
+
+                            $receitas[$data_anterior][] = (float) $receita_liquida_anterior;
 
                             $total_receita += $receita_liquida_anterior;
                         }
@@ -74,13 +78,18 @@ class ClienteController extends Controller {
                     $cont++;
                 }
 
-                $receitas_maximas = max($relatorio);
+                foreach($receitas as $key => $rec) {
+                    rsort($rec);
+                    $arr_ordena[$key] = $rec;
+                }
 
                 foreach($relatorio as $keys => $values) {
                     foreach($values as $key => $value) {
                         if((String)$key != "total") {
-                            if($value["Receita Líquida"] == $receitas_maximas[$key]["Receita Líquida"])
-                                $relatorio[$keys][$key]["Receita Líquida"] = "<span style='color:blue'>".$value["Receita Líquida"]."</span>";
+                            if($value["Receita Líquida"] == $arr_ordena[$value["Período"]][0])
+                                $relatorio[$keys][$key]["Receita Líquida"] = "<span style='color:blue'>R$ ".number_format($value["Receita Líquida"], 2)."</span>";
+                            else
+                                $relatorio[$keys][$key]["Receita Líquida"] = number_format($value["Receita Líquida"], 2);
                         }
                     }
                 }
