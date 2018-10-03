@@ -80,7 +80,7 @@ http://provaagence.herokuapp.com
 
 ## License
 
-Performance Comercial está sob a licença <a href="LICENSE">The MIT License (MIT)</a>.
+Este projeto está licenciado sob <a href="LICENSE">The MIT License (MIT)</a>.
 
 ## Screenshots
 
@@ -93,3 +93,10 @@ Performance Comercial está sob a licença <a href="LICENSE">The MIT License (MI
 ![Screenshots](screenshots/screenshot07.png)<br><br>
 ![Screenshots](screenshots/screenshot08.png)<br><br>
 ![Screenshots](screenshots/screenshot09.png)<br><br>
+
+<br><br>
+Desenvolvido por<br>
+Danilo Meneghel<br>
+danilo.meneghel@gmail.com<br>
+http://danilomeneghel.github.io/<br>
+
