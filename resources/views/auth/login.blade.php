@@ -100,7 +100,7 @@
             </div>
           </div>
           <div class="text-center">
-            <strong>Test Login:</strong><br><br>
+            <strong>Login Teste:</strong><br><br>
             Email: admin@admin.com<br>
             Senha: 1234<br>
           </div>
