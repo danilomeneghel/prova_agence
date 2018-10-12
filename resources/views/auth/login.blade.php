@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>CAOL - Controle de Atividades Online</title>
 
         <!-- Font Awesome -->
@@ -96,14 +96,14 @@
     								</div>
   							  </div>
 							  </div>
-                <div class="text-center">
-                  <strong>Test Login:</strong><br><br>
-                  Email: admin@admin.com<br>
-                  Password: 1234<br>
-                </div>
-							</form>
-						</div>
-					</div>
+              </form>
+            </div>
+          </div>
+          <div class="text-center">
+            <strong>Test Login:</strong><br><br>
+            Email: admin@admin.com<br>
+            Password: 1234<br>
+          </div>
 				</div>
 			</div>
 		</div>
