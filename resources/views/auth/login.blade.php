@@ -19,12 +19,12 @@
 			<div class="row">
 				<div class="login col-md-4 col-md-offset-4">
           <div class="login-title">
-            <h4>CAOL - Controle de Atividades Online</h4>
+            <h3>CAOL - Controle de Atividades Online</h3>
           </div>
 
 					<div class="panel panel-default">
 						<div class="panel-body panel-login">
-							<div class="panel-heading text-center">
+							<div class="text-center">
                 <h3>Login</h3>
               </div>
 
@@ -102,7 +102,7 @@
           <div class="text-center">
             <strong>Test Login:</strong><br><br>
             Email: admin@admin.com<br>
-            Password: 1234<br>
+            Senha: 1234<br>
           </div>
 				</div>
 			</div>
