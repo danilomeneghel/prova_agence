@@ -19,13 +19,13 @@
 			<div class="row">
 				<div class="login col-md-4 col-md-offset-4">
           <div class="login-title">
-            <h3>CAOL - Controle de Atividades Online</h3>
+            <h4>CAOL - Controle de Atividades Online</h4>
           </div>
 
 					<div class="panel panel-default">
 						<div class="panel-body panel-login">
 							<div class="text-center">
-                <h3>Login</h3>
+                <h4>Login</h4>
               </div>
 
 							<form class="form-login" method="POST" action="{{ route('login') }}">
