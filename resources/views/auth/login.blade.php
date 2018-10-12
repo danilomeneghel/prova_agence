@@ -24,7 +24,9 @@
 
 					<div class="panel panel-default">
 						<div class="panel-body panel-login">
-							<div class="panel-heading text-center"><h4>Login</h4></div>
+							<div class="panel-heading text-center">
+                <h3>Login</h3>
+              </div>
 
 							<form class="form-login" method="POST" action="{{ route('login') }}">
 								{{ csrf_field() }}
@@ -94,6 +96,11 @@
     								</div>
   							  </div>
 							  </div>
+                <div class="text-center">
+                  <strong>Test Login:</strong><br><br>
+                  Email: admin@admin.com<br>
+                  Password: 1234<br>
+                </div>
 							</form>
 						</div>
 					</div>
